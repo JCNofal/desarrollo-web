@@ -1,0 +1,126 @@
+body {
+    background-color: #a3cbb2;
+}
+
+.encabezado {
+    font-size: 24px;
+    text-align: center;
+    font-family: "Lora", serif;
+    font-weight: 700;
+    
+    
+}
+
+main {
+    font-size: 20px;
+    font-family: "lora", serif;
+    font-style: italic;
+    
+}
+
+ul {
+    list-style-type: none;
+    font-size: 20px;
+}
+
+
+    
+.arts {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    inline-size: 50px;
+    width: 300px;
+    
+}
+
+.media {
+    border-top: solid 10px green;
+    border-right: solid 10px green;
+    border-bottom: solid 10px green;
+    border-left: solid 10px green;
+    padding: 10px;
+    margin: 20px;
+}
+
+.tope {
+    color: darkslategray;
+    font-size: 24px ;
+    font-style: italic;
+}
+
+.aviso {
+    font-size: 36px;
+    font-weight: bolder;
+}
+
+.navegacion ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.navegacion li {
+    padding: 8px;
+    border: solid 2px green;
+     
+}
+
+.conocenosmain {
+    max-width: 50%;
+}
+
+.principal {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-areas: 
+    "header"
+    "nav"
+    "main"
+    "aside"
+    "footer"
+    ;
+}
+
+header {
+    grid-area: header;
+}
+
+nav {
+    grid-area: nav;
+}
+
+main {
+    grid-area: main;
+}
+
+aside {
+    grid-area: aside;
+    }
+
+footer {
+    grid-area: footer;
+}
+
+@media screen and (min-width: 768px) {
+.principal {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-areas: 
+    "header header header"
+    "nav nav nav"
+    "main aside aside"
+    "footer footer footer"
+    ;
+}
+
+.pages {
+    background-image: url("media/logo.png");
+    margin: 0px;
+    border: 0px;
+    background-size: 600px 150px;
+    background-repeat: no-repeat;
+    background-position: 100% 0%;
+    background-attachment: fixed;
+    }
+}
